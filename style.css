@@ -35,13 +35,25 @@ p, h1, h2, h3, h4, h5, h6 {
     grid-template-rows: 1fr 5fr;
 }
 
+/*DASHBOARD*/
+
 .dashboard {
     grid-row: 1 / span 2;
 }
 
+/*HEADER*/
+
 .header {
     grid-column: 2 / span 2;
+    padding: 10px 30px;
 }
+
+.header-top {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+/*MAIN CONTENT*/
 
 .main-content {
     display: grid;
@@ -55,3 +67,14 @@ p, h1, h2, h3, h4, h5, h6 {
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
 }
+
+.projects-title {
+    
+}
+
+.project {
+    display: grid;
+    grid-template-rows: 1fr 4fr 1fr;
+    padding: 15px;
+}
+
