@@ -4,6 +4,7 @@
 }
 * {
     margin: 0;
+    padding: 0;
 }
 body {
     line-height: 1.5;
@@ -35,7 +36,7 @@ li {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 200px 3fr 1fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -48,6 +49,19 @@ li {
 
 .dashboard {
     grid-row: 1 / span 2;
+}
+
+.dashboard > * {
+    padding-bottom: 20px;
+}
+
+.dashboard-title p {
+    display: flex;
+}
+
+.dashboard li {
+    display: flex;
+    padding: 10px;
 }
 
 /*HEADER*/
