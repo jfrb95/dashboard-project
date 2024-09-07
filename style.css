@@ -36,8 +36,8 @@ li {
 
 .container {
     display: grid;
-    grid-template-columns: 200px 3fr 1fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 235px 3fr 1fr;
+    grid-template-rows: 145px 1fr;
 }
 
 .icon-small {
@@ -85,6 +85,27 @@ li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-welcome {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+
+.profile-icon {
+    grid-row: 1 / span 2;
+}
+
+.header-bottom-misc {
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 /*MAIN CONTENT*/
