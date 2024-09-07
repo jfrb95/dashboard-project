@@ -22,6 +22,10 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
     isolation: isolate;
 }
+
+li {
+    list-style-type: none;
+}
   
 /*MY CSS*/
 
@@ -33,6 +37,11 @@ p, h1, h2, h3, h4, h5, h6 {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-rows: 1fr 5fr;
+}
+
+.icon-small {
+    width: 21px;
+    height: 21px;
 }
 
 /*DASHBOARD*/
@@ -51,6 +60,17 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-top {
     display: grid;
     grid-template-columns: 3fr 1fr;
+}
+
+.header-search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header-top-misc {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*MAIN CONTENT*/
