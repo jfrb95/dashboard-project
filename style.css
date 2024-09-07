@@ -130,6 +130,17 @@ li {
 .project {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
-    padding: 15px;
+    padding: 0px;
 }
 
+/*NEWS*/
+
+.trending-list li {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trending-list li img {
+    grid-row: 1 / span 2;
+}
