@@ -85,10 +85,6 @@ li {
     height: 50px;
 }
 
-.profile-icon-large {
-    height: 100px;
-}
-
 /*HEADER*/
 
 .header {
@@ -134,18 +130,37 @@ li {
 
 .header-welcome {
     justify-self: start;
-    display: grid;
+    display: flex;
+    align-items: center;
     grid-template-columns: 100px 1fr;
 }
 
+.header-welcome-text {
+    display: grid;
+}
+
 .profile-icon {
+    height: 75px;
     grid-row: 1 / span 2;
 }
 
 .header-bottom-misc {
     justify-self: end;
+    display: flex;
+    gap: 20px;
+    /*
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    */
+    align-items: center;
+}
+
+.header-bottom-misc button {
+    color: white;
+    background-color: #1992d4;
+    border-radius: 20px;
+    padding: 3px 10px;
+    width: 80px;
 }
 
 /*MAIN CONTENT*/
