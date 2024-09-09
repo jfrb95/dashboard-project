@@ -27,6 +27,8 @@ p, h1, h2, h3, h4, h5, h6 {
 li {
     list-style-type: none;
 }
+
+
   
 /*MY CSS*/
 
@@ -49,6 +51,9 @@ li {
 
 .dashboard {
     grid-row: 1 / span 2;
+    background-color: #1992d4;
+    color: white;
+    padding: 10px;
 }
 
 .dashboard > * {
@@ -57,11 +62,21 @@ li {
 
 .dashboard-title p {
     display: flex;
+    align-items: center;
 }
 
 .dashboard li {
     display: flex;
     padding: 10px;
+}
+
+.dashboard-icon {
+    fill: white;
+    height: 40px;
+}
+
+.icon-small.white {
+    fill: white;
 }
 
 /*HEADER*/
