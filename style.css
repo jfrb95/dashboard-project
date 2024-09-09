@@ -36,10 +36,16 @@ li {
     border: 1px solid;
 }
 
+:root {
+    --main-color-blue: #1992d4;
+    --main-color-grey: #e2e8f0;
+    --main-color-yellow: #f0b429;
+}
+
 .container {
     display: grid;
-    grid-template-columns: 235px 3fr 1fr;
-    grid-template-rows: 145px 1fr;
+    grid-template-columns: 235px 3fr 235px;
+    grid-template-rows: 145px calc(100vh - 145px);
 }
 
 .icon-small {
@@ -52,7 +58,7 @@ li {
 
 .dashboard {
     grid-row: 1 / span 2;
-    background-color: #1992d4;
+    background-color: var(--main-color-blue);
     color: white;
     padding: 10px;
 }
@@ -106,7 +112,7 @@ li {
     width: 450px;
     border-radius: 13px;
     border: none;
-    background-color: #e2e8f0;
+    background-color: var(--main-color-grey);
 }
 
 .header-top-misc {
@@ -148,16 +154,12 @@ li {
     justify-self: end;
     display: flex;
     gap: 20px;
-    /*
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    */
     align-items: center;
 }
 
 .header-bottom-misc button {
     color: white;
-    background-color: #1992d4;
+    background-color: var(--main-color-blue);
     border-radius: 20px;
     padding: 3px 10px;
     width: 80px;
@@ -169,26 +171,38 @@ li {
     display: grid;
     grid-template-rows: 1fr 20fr;
     padding: 0px 15px;
+    background-color: var(--main-color-grey);
+}
+
+.projects-title {
+    align-self: end;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, 340px);
+    grid-template-rows: repeat(auto-fit, 200px);
     gap: 20px;
-}
-
-.projects-title {
-    
 }
 
 .project {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
-    padding: 0px;
+    padding: 15px;
+    background-image: linear-gradient(to right, var(--main-color-yellow) 2%, white 2%);
+    border-radius: 7px;
+}
+
+.project-description {
+    height: 100px;
+    overflow: hidden;
 }
 
 /*NEWS*/
+
+.news {
+    background-color: var(--main-color-grey);
+}
 
 .trending-list li {
     display: grid;
