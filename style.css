@@ -45,6 +45,7 @@ li {
 .icon-small {
     width: 21px;
     height: 21px;
+    margin: 10px;
 }
 
 /*DASHBOARD*/
@@ -68,6 +69,7 @@ li {
 .dashboard li {
     display: flex;
     padding: 10px;
+    align-items: center;
 }
 
 .dashboard-icon {
@@ -79,11 +81,19 @@ li {
     fill: white;
 }
 
+.profile-icon-small {
+    height: 50px;
+}
+
+.profile-icon-large {
+    height: 100px;
+}
+
 /*HEADER*/
 
 .header {
     grid-column: 2 / span 2;
-    padding: 10px 30px;
+    padding: 10px 25px;
 }
 
 .header-top {
@@ -96,7 +106,22 @@ li {
     align-items: center;
 }
 
+#search-bar {
+    width: 450px;
+    border-radius: 13px;
+    border: none;
+    background-color: #e2e8f0;
+}
+
 .header-top-misc {
+    justify-self: end;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+}
+
+.profile-clickable {
     display: flex;
     justify-content: space-around;
     align-items: center;
