@@ -28,8 +28,80 @@ li {
     list-style-type: none;
 }
 
+/*FONTS*/
 
+.roboto-thin {
+    font-family: "Roboto", system-ui;
+    font-weight: 100;
+    font-style: normal;
+  }
   
+.roboto-light {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: normal;
+}
+  
+.roboto-regular {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+.roboto-medium {
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+  
+.roboto-bold {
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.roboto-black {
+    font-family: "Roboto", system-ui;
+    font-weight: 900;
+    font-style: normal;
+}
+  
+.roboto-thin-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 100;
+    font-style: italic;
+}
+  
+.roboto-light-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 300;
+    font-style: italic;
+}
+  
+.roboto-regular-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: italic;
+}
+  
+.roboto-medium-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 500;
+    font-style: italic;
+}
+  
+  .roboto-bold-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 700;
+    font-style: italic;
+}
+  
+.roboto-black-italic {
+    font-family: "Roboto", system-ui;
+    font-weight: 900;
+    font-style: italic;
+}
+
 /*MY CSS*/
 
 /*
@@ -43,6 +115,7 @@ li {
     --main-color-grey: #e2e8f0;
     --main-color-yellow: #f0b429;
     --main-shadow: #9ea2a8 1px 3px 5px -2px;
+    font-family: "Roboto";
 }
 
 .container {
@@ -58,6 +131,12 @@ li {
     margin: 10px;
 }
 
+hr {
+    border: none;
+    height: 1px;
+    background-color: lightgrey;
+}
+
 /*DASHBOARD*/
 
 .dashboard {
@@ -71,20 +150,31 @@ li {
     padding-bottom: 20px;
 }
 
-.dashboard-title p {
+.dashboard-title {
     display: flex;
     align-items: center;
+}
+
+.dashboard-title p {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 6px;
 }
 
 .dashboard li {
     display: flex;
-    padding: 10px;
+    padding-left: 10px;
     align-items: center;
+}
+
+.dashboard li p {
+    font-weight: bold;
+    margin-left: 4px;
 }
 
 .dashboard-icon {
     fill: white;
-    height: 40px;
+    height: 50px;
 }
 
 .icon-small.white {
@@ -177,7 +267,7 @@ li {
 
 .main-content {
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 44px 1fr;
     padding: 0px 15px;
 }
 
@@ -197,14 +287,31 @@ li {
     display: grid;
     grid-template-rows: 1fr 4fr 1fr;
     padding: 15px;
-    background-image: linear-gradient(to right, var(--main-color-yellow) 2%, white 2%);
+    background-image: linear-gradient(to right, var(--main-color-yellow) 2.5%, white 2.5%);
     border-radius: 7px;
     box-shadow: var(--main-shadow);
+}
+
+.project-title {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .project-description {
     height: 100px;
     overflow: hidden;
+    color: grey;
+    font-size: 13px;
+    line-height: 1;
+    margin-left: 10px;
+}
+
+.project-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
 }
 
 /*NEWS*/
@@ -216,7 +323,7 @@ li {
 
 .news-announcements {
     display: grid;
-    grid-template-rows: 50px 270px;
+    grid-template-rows: 44px 270px;
 }
 
 .news-trending {
@@ -239,11 +346,17 @@ li {
     box-shadow: var(--main-shadow);
 }
 
+.announcement-titles {
+    font-weight: bold;
+    font-size: 12px;
+}
+
 .announcement-description {
     line-height: 1;
-    font-size: 12px;
-    height: 37px;
+    font-size: 10px;
+    height: 3em;
     overflow: hidden;
+    color: grey;
 }
 
 .trending-list {
@@ -259,4 +372,18 @@ li {
 .trending-list li {
     display: flex;
     align-items: center;
+}
+
+.user-project {
+    margin-left: 5px;
+}
+
+.trending-user {
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.trending-project-name {
+    font-size: 11px;
+    color: grey;
 }
