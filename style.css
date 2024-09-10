@@ -330,6 +330,7 @@ hr {
 .project-icons {
     display: flex;
     justify-content: flex-end;
+    fill: rgb(70,70,70)
 }
 
 /*NEWS*/
