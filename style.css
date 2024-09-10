@@ -217,13 +217,19 @@ hr {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 200px;
+    width: 250px;
 }
 
 .profile-clickable {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.profile-clickable p {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .header-bottom {
@@ -240,6 +246,17 @@ hr {
 
 .header-welcome-text {
     display: grid;
+    margin-left: 10px;
+}
+
+.hi {
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.username {
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .profile-icon {
@@ -258,9 +275,11 @@ hr {
     color: white;
     background-color: var(--main-color-blue);
     border-radius: 20px;
-    padding: 3px 10px;
+    height: 30px;
     width: 80px;
     border: none;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 /*MAIN CONTENT*/
