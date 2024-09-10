@@ -42,13 +42,14 @@ li {
     --main-color-blue: #1992d4;
     --main-color-grey: #e2e8f0;
     --main-color-yellow: #f0b429;
-    --main-shadow: ;
+    --main-shadow: #9ea2a8 1px 3px 5px -2px;
 }
 
 .container {
     display: grid;
     grid-template-columns: 235px 3fr 235px;
     grid-template-rows: 145px calc(100vh - 145px);
+    background-color: var(--main-color-grey);
 }
 
 .icon-small {
@@ -99,7 +100,9 @@ li {
 .header {
     grid-column: 2 / span 2;
     padding: 10px 25px 0px 25px;
+    margin-bottom: 6px;
     box-shadow: var(--main-shadow);
+    background-color: white;
 }
 
 .header-top {
@@ -176,7 +179,6 @@ li {
     display: grid;
     grid-template-rows: 50px 1fr;
     padding: 0px 15px;
-    background-color: var(--main-color-grey);
 }
 
 .projects-title {
