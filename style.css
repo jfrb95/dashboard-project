@@ -32,14 +32,17 @@ li {
   
 /*MY CSS*/
 
+/*
 * {
     border: 1px solid;
 }
+*/
 
 :root {
     --main-color-blue: #1992d4;
     --main-color-grey: #e2e8f0;
     --main-color-yellow: #f0b429;
+    --main-shadow: ;
 }
 
 .container {
@@ -95,7 +98,8 @@ li {
 
 .header {
     grid-column: 2 / span 2;
-    padding: 10px 25px;
+    padding: 10px 25px 0px 25px;
+    box-shadow: var(--main-shadow);
 }
 
 .header-top {
@@ -163,13 +167,14 @@ li {
     border-radius: 20px;
     padding: 3px 10px;
     width: 80px;
+    border: none;
 }
 
 /*MAIN CONTENT*/
 
 .main-content {
     display: grid;
-    grid-template-rows: 1fr 20fr;
+    grid-template-rows: 50px 1fr;
     padding: 0px 15px;
     background-color: var(--main-color-grey);
 }
@@ -180,9 +185,10 @@ li {
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 340px);
-    grid-template-rows: repeat(auto-fit, 200px);
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(auto-fit, 180px);
     gap: 20px;
+    overflow: auto;
 }
 
 .project {
@@ -191,6 +197,7 @@ li {
     padding: 15px;
     background-image: linear-gradient(to right, var(--main-color-yellow) 2%, white 2%);
     border-radius: 7px;
+    box-shadow: var(--main-shadow);
 }
 
 .project-description {
@@ -201,15 +208,53 @@ li {
 /*NEWS*/
 
 .news {
+    padding-right: 20px;
     background-color: var(--main-color-grey);
 }
 
-.trending-list li {
+.news-announcements {
     display: grid;
-    grid-template-columns: 70px 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 50px 270px;
 }
 
-.trending-list li img {
-    grid-row: 1 / span 2;
+.news-trending {
+    display: grid;
+    grid-template-rows: 50px 260px;
+}
+
+.announcement-section-title,
+.trending-section-title {
+    align-self: end;
+}
+
+.announcements-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: var(--main-shadow);
+}
+
+.announcement-description {
+    line-height: 1;
+    font-size: 12px;
+    height: 37px;
+    overflow: hidden;
+}
+
+.trending-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 13px;
+    border-radius: 7px;
+    box-shadow: var(--main-shadow);
+}
+
+.trending-list li {
+    display: flex;
+    align-items: center;
 }
