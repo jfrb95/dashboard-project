@@ -300,7 +300,7 @@ hr {
 }
 
 .project-description {
-    height: 100px;
+    height: 5.1em;
     overflow: hidden;
     color: grey;
     font-size: 13px;
@@ -311,7 +311,6 @@ hr {
 .project-icons {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 10px;
 }
 
 /*NEWS*/
